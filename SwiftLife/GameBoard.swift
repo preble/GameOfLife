@@ -22,34 +22,30 @@ struct Point {
 class GameBoard<T:Equatable> {
 	
 	let size: Size
-	var columns: Array<Array<T>>;
+	var data: Array<T>;
 	
 	init(size: Size, initialValue: T) {
 		self.size = size
-		self.columns = T[][]()
-		for x in 0..self.size.width {
-			var column = Array<T>(count: Int(self.size.height), repeatedValue: initialValue)
-			self.columns.append(column)
-		}
+		self.data = Array<T>(count: Int(self.size.width * self.size.height), repeatedValue: initialValue)
 	}
 	
 	init(boardToCopy: GameBoard<T>) {
 		self.size = boardToCopy.size
-		self.columns = T[][]()
-		for x in 0..self.size.width {
-			var column = boardToCopy.columns[x].copy()
-			self.columns.append(column)
-		}
+		self.data = boardToCopy.data.copy()
+	}
+	
+	func dataIndexForPosition(position: Point) -> Int {
+		return position.y * size.width + position.x
 	}
 	
 	func setValue(value: T, position: Point) {
-		columns[position.x][position.y] = value
+		data[dataIndexForPosition(position)] = value
 	}
 	func valueAtPosition(position: Point) -> T? {
 		if position.x < 0 || position.y < 0 || position.x >= size.width || position.y >= size.height {
 			return nil
 		}
-		return columns[position.x][position.y]
+		return data[dataIndexForPosition(position)]
 	}
 	func enumerateUsingClosure(closure: (position: Point, value: T) -> Void) {
 		for x in 0..size.width {
@@ -79,7 +75,7 @@ class GameBoard<T:Equatable> {
 	
 	func numberOfNeighborsOfPosition(position: Point, equalToValue: T) -> Int {
 		var neighbors = 0
-		self.enumerateNeighborsOfPosition(position) {
+		enumerateNeighborsOfPosition(position) {
 			position, value in
 			if value == equalToValue {
 				neighbors++
