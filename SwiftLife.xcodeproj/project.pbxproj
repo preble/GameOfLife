@@ -33,6 +33,7 @@
 		6686E24F195E20F200AFFB5A /* GameBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameBoard.swift; sourceTree = "<group>"; };
 		6686E251195E25F600AFFB5A /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		6686E252195E25F600AFFB5A /* MainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
+		6686E255195E730600AFFB5A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		66B70E52195B0F2A001545F9 /* SwiftLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66B70E56195B0F2A001545F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66B70E57195B0F2A001545F9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -67,6 +68,7 @@
 		66B70E49195B0F2A001545F9 = {
 			isa = PBXGroup;
 			children = (
+				6686E255195E730600AFFB5A /* README.md */,
 				66B70E54195B0F2A001545F9 /* SwiftLife */,
 				66B70E67195B0F2A001545F9 /* SwiftLifeTests */,
 				66B70E53195B0F2A001545F9 /* Products */,
