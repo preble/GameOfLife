@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6686E250195E20F200AFFB5A /* GameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6686E24F195E20F200AFFB5A /* GameBoard.swift */; };
+		6686E253195E25F600AFFB5A /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6686E251195E25F600AFFB5A /* MainWindowController.swift */; };
+		6686E254195E25F600AFFB5A /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6686E252195E25F600AFFB5A /* MainWindowController.xib */; };
+		66B70E58195B0F2A001545F9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B70E57195B0F2A001545F9 /* main.swift */; };
+		66B70E5A195B0F2A001545F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B70E59195B0F2A001545F9 /* AppDelegate.swift */; };
+		66B70E5C195B0F2A001545F9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66B70E5B195B0F2A001545F9 /* Images.xcassets */; };
+		66B70E5F195B0F2A001545F9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66B70E5D195B0F2A001545F9 /* MainMenu.xib */; };
+		66B70E6B195B0F2A001545F9 /* SwiftLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B70E6A195B0F2A001545F9 /* SwiftLifeTests.swift */; };
+		66B70E75195B0F4D001545F9 /* GameOfLife.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B70E74195B0F4D001545F9 /* GameOfLife.swift */; };
+		66B70E77195BCCC4001545F9 /* GameOfLifeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B70E76195BCCC4001545F9 /* GameOfLifeView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66B70E65195B0F2A001545F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66B70E4A195B0F2A001545F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66B70E51195B0F2A001545F9;
+			remoteInfo = SwiftLife;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6686E24F195E20F200AFFB5A /* GameBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameBoard.swift; sourceTree = "<group>"; };
+		6686E251195E25F600AFFB5A /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		6686E252195E25F600AFFB5A /* MainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
+		66B70E52195B0F2A001545F9 /* SwiftLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66B70E56195B0F2A001545F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66B70E57195B0F2A001545F9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		66B70E59195B0F2A001545F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		66B70E5B195B0F2A001545F9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		66B70E5E195B0F2A001545F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		66B70E64195B0F2A001545F9 /* SwiftLifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftLifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66B70E69195B0F2A001545F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66B70E6A195B0F2A001545F9 /* SwiftLifeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLifeTests.swift; sourceTree = "<group>"; };
+		66B70E74195B0F4D001545F9 /* GameOfLife.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOfLife.swift; sourceTree = "<group>"; };
+		66B70E76195BCCC4001545F9 /* GameOfLifeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOfLifeView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66B70E4F195B0F2A001545F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66B70E61195B0F2A001545F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66B70E49195B0F2A001545F9 = {
+			isa = PBXGroup;
+			children = (
+				66B70E54195B0F2A001545F9 /* SwiftLife */,
+				66B70E67195B0F2A001545F9 /* SwiftLifeTests */,
+				66B70E53195B0F2A001545F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		66B70E53195B0F2A001545F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66B70E52195B0F2A001545F9 /* SwiftLife.app */,
+				66B70E64195B0F2A001545F9 /* SwiftLifeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66B70E54195B0F2A001545F9 /* SwiftLife */ = {
+			isa = PBXGroup;
+			children = (
+				6686E24F195E20F200AFFB5A /* GameBoard.swift */,
+				66B70E74195B0F4D001545F9 /* GameOfLife.swift */,
+				66B70E76195BCCC4001545F9 /* GameOfLifeView.swift */,
+				6686E251195E25F600AFFB5A /* MainWindowController.swift */,
+				6686E252195E25F600AFFB5A /* MainWindowController.xib */,
+				66B70E59195B0F2A001545F9 /* AppDelegate.swift */,
+				66B70E5B195B0F2A001545F9 /* Images.xcassets */,
+				66B70E5D195B0F2A001545F9 /* MainMenu.xib */,
+				66B70E55195B0F2A001545F9 /* Supporting Files */,
+			);
+			path = SwiftLife;
+			sourceTree = "<group>";
+		};
+		66B70E55195B0F2A001545F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				66B70E56195B0F2A001545F9 /* Info.plist */,
+				66B70E57195B0F2A001545F9 /* main.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		66B70E67195B0F2A001545F9 /* SwiftLifeTests */ = {
+			isa = PBXGroup;
+			children = (
+				66B70E6A195B0F2A001545F9 /* SwiftLifeTests.swift */,
+				66B70E68195B0F2A001545F9 /* Supporting Files */,
+			);
+			path = SwiftLifeTests;
+			sourceTree = "<group>";
+		};
+		66B70E68195B0F2A001545F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				66B70E69195B0F2A001545F9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66B70E51195B0F2A001545F9 /* SwiftLife */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66B70E6E195B0F2A001545F9 /* Build configuration list for PBXNativeTarget "SwiftLife" */;
+			buildPhases = (
+				66B70E4E195B0F2A001545F9 /* Sources */,
+				66B70E4F195B0F2A001545F9 /* Frameworks */,
+				66B70E50195B0F2A001545F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftLife;
+			productName = SwiftLife;
+			productReference = 66B70E52195B0F2A001545F9 /* SwiftLife.app */;
+			productType = "com.apple.product-type.application";
+		};
+		66B70E63195B0F2A001545F9 /* SwiftLifeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66B70E71195B0F2A001545F9 /* Build configuration list for PBXNativeTarget "SwiftLifeTests" */;
+			buildPhases = (
+				66B70E60195B0F2A001545F9 /* Sources */,
+				66B70E61195B0F2A001545F9 /* Frameworks */,
+				66B70E62195B0F2A001545F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66B70E66195B0F2A001545F9 /* PBXTargetDependency */,
+			);
+			name = SwiftLifeTests;
+			productName = SwiftLifeTests;
+			productReference = 66B70E64195B0F2A001545F9 /* SwiftLifeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66B70E4A195B0F2A001545F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Adam Preble";
+				TargetAttributes = {
+					66B70E51195B0F2A001545F9 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					66B70E63195B0F2A001545F9 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 66B70E51195B0F2A001545F9;
+					};
+				};
+			};
+			buildConfigurationList = 66B70E4D195B0F2A001545F9 /* Build configuration list for PBXProject "SwiftLife" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66B70E49195B0F2A001545F9;
+			productRefGroup = 66B70E53195B0F2A001545F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66B70E51195B0F2A001545F9 /* SwiftLife */,
+				66B70E63195B0F2A001545F9 /* SwiftLifeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66B70E50195B0F2A001545F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66B70E5C195B0F2A001545F9 /* Images.xcassets in Resources */,
+				6686E254195E25F600AFFB5A /* MainWindowController.xib in Resources */,
+				66B70E5F195B0F2A001545F9 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66B70E62195B0F2A001545F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66B70E4E195B0F2A001545F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66B70E5A195B0F2A001545F9 /* AppDelegate.swift in Sources */,
+				66B70E77195BCCC4001545F9 /* GameOfLifeView.swift in Sources */,
+				6686E253195E25F600AFFB5A /* MainWindowController.swift in Sources */,
+				6686E250195E20F200AFFB5A /* GameBoard.swift in Sources */,
+				66B70E75195B0F4D001545F9 /* GameOfLife.swift in Sources */,
+				66B70E58195B0F2A001545F9 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66B70E60195B0F2A001545F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66B70E6B195B0F2A001545F9 /* SwiftLifeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66B70E66195B0F2A001545F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66B70E51195B0F2A001545F9 /* SwiftLife */;
+			targetProxy = 66B70E65195B0F2A001545F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		66B70E5D195B0F2A001545F9 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66B70E5E195B0F2A001545F9 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66B70E6C195B0F2A001545F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		66B70E6D195B0F2A001545F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		66B70E6F195B0F2A001545F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftLife/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		66B70E70195B0F2A001545F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftLife/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		66B70E72195B0F2A001545F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwiftLife.app/Contents/MacOS/SwiftLife";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftLifeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		66B70E73195B0F2A001545F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwiftLife.app/Contents/MacOS/SwiftLife";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftLifeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66B70E4D195B0F2A001545F9 /* Build configuration list for PBXProject "SwiftLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66B70E6C195B0F2A001545F9 /* Debug */,
+				66B70E6D195B0F2A001545F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66B70E6E195B0F2A001545F9 /* Build configuration list for PBXNativeTarget "SwiftLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66B70E6F195B0F2A001545F9 /* Debug */,
+				66B70E70195B0F2A001545F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66B70E71195B0F2A001545F9 /* Build configuration list for PBXNativeTarget "SwiftLifeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66B70E72195B0F2A001545F9 /* Debug */,
+				66B70E73195B0F2A001545F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66B70E4A195B0F2A001545F9 /* Project object */;
+}
