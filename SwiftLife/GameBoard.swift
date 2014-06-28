@@ -48,11 +48,21 @@ class GameBoard<T:Equatable> {
 		return data[dataIndexForPosition(position)]
 	}
 	func enumerateUsingClosure(closure: (position: Point, value: T) -> Void) {
+		mutateUsingClosure() {
+			position, value in
+			closure(position: position, value: value)
+			return value
+		}
+	}
+	func mutateUsingClosure(closure: (position: Point, value: T) -> T) {
 		for x in 0..size.width {
 			for y in 0..size.height {
 				let position = Point(x:x, y:y)
 				let value = valueAtPosition(position)!
-				closure(position: position, value: value)
+				let newValue = closure(position: position, value: value)
+				if value != newValue {
+					setValue(newValue, position: position)
+				}
 			}
 		}
 	}

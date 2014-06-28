@@ -36,15 +36,29 @@ class GameOfLife: NSObject {
 	}
 	
 	func rewriteBoard(closure: (live: Bool, neighbors: Int) -> Bool) {
-		var copy = GameBoard<Bool>(boardToCopy: board)
+		// Naive way to do this would be to check the neighbors of each cell.
+		// This ends up doing a lot of checking that's unnecessary. Instead,
+		// we'll construct a table containing the counts of the neighbors for
+		// each cell which will allow us to avoid all of that duplicated work.
+		var neighborBoard = GameBoard<Int>(size: board.size, initialValue: 0)
 		board.enumerateUsingClosure() {
 			position, live in
 			
-			let numLiveNeighbors = self.numberOfLiveNeihgborsToPosition(position)
-			let stillLive = closure(live: live, neighbors: numLiveNeighbors)
-			copy.setValue(stillLive, position: position)
+			if live {
+				self.board.enumerateNeighborsOfPosition(position) {
+					neighborPosition, _ in
+					let count = neighborBoard.valueAtPosition(neighborPosition)
+					neighborBoard.setValue(count! + 1, position: neighborPosition)
+				}
+			}
 		}
-		board = copy
+		board.mutateUsingClosure() {
+			position, live in
+			
+			let numLiveNeighbors = neighborBoard.valueAtPosition(position)
+			let stillLive = closure(live: live, neighbors: numLiveNeighbors!)
+			return stillLive
+		}
 	}
 	
 	func numberOfLiveNeihgborsToPosition(position: Point) -> Int {
