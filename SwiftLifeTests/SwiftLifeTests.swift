@@ -38,4 +38,11 @@ class SwiftLifeTests: XCTestCase {
 		XCTAssertEqual(board.numberOfNeighborsOfPosition(Point(x: 0, y: 0), equalToValue: 1), 0, "")
 	}
 	
+	func testBasicPerformance() {
+		let game = GameOfLife(size: CGSize(width: 100, height: 100))
+		measureBlock() {
+			game.tick()
+		}
+	}
+	
 }
